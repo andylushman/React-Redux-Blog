@@ -40,7 +40,7 @@ class PostShow extends Component {
   }
 }
 
-//first argument is applicaiton state, second argument is the props that id being injectected into the component, if added.
+//first argument is applicaiton state, second argument is the props that is being injectected into the component, if added.
 function mapStateToProps({ posts }, ownProps) {
   // to just give one specific post instead of the list from application state.
   return { post: posts[ownProps.match.params.id] };
